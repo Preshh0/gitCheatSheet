@@ -1,0 +1,113 @@
+body{
+    background: rgb(246, 246, 247);
+}
+.contentWrapper{
+    background-color: white;
+    font-family:sans-serif;
+    margin:auto;
+    width:75%;
+}
+
+header{
+    width: 100%;
+}
+
+.firstHeader{
+    background: #489689;
+    height:70px;
+    color:white;
+    font-family: sans-serif;
+    padding:30px;
+    font-size:30px;
+}
+
+.secondHeader{
+    background: #e7ebe8;
+    width:100%;
+    font-weight:3em;    
+}
+
+.secondHeader p{
+    margin:0px;
+    padding:30px;    
+}
+
+main{
+    display: grid;
+    grid-template-columns: none;
+    margin: 40px;
+    font-size:14px;
+    justify-content: space-between;
+}
+
+h3{
+    margin:0px;
+}
+
+h4{
+    margin:15px 0px 0px 0px;
+}
+
+.leftSection{
+    margin-right: 20px;
+}
+
+.leftSection p{
+    margin:0px;
+}
+.leftSection a{
+    text-decoration:none;
+    color:black;
+}
+
+table{
+    background: rgb(255, 255, 255);
+    margin-top:15px;
+}
+
+table td{
+    border-bottom: 2px dotted black;
+    background: rgb(217,210,182, 0.4);
+    padding:10px;
+}
+
+code{
+    background: #e7ebe8;
+    
+} 
+
+footer{
+    text-align: center;
+    background-color: #489689;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* .example {background: red;} */
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    /* .example {background: green;} */
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    main{
+        display: grid;
+        grid-template-columns:50% 50%;
+    }
+    /* .rightSection{
+        margin-top:20px;
+    } */
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    /* .example {background: orange;} */
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    /* .example {background: pink;} */
+  }

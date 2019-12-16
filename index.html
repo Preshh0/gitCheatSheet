@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contentWrapper">
+        <header>
+            <div class="firstHeader">
+                <b>GitHub</b>
+                <br>
+                GIT CHEAT SHEET
+            </div>
+            
+            <div class="secondHeader">
+                <p>
+                    Git is the free and open source distributed version control system that's responsible for everything GitHub
+                    <br>
+                    related that happens locally on your computer. This cheat sheet features the most important and commonly
+                    <br>
+                    used Git commands for easy reference.
+                </p>
+            </div>
+        </header>
+        <main>
+            <div class="leftSection">
+                <h3> INSTALLATION & GUIS</h3>
+                <p>
+                    With platform specific installers for Git, Github also provides the
+                    <br>
+                    ease of staying up-to-date with the latest releases of the command 
+                    <br>
+                    line tool while providing a graphical user interface for day-to-day 
+                    <br>
+                    interaction, review, and repository synchronization.
+                </p>
+
+                <h4>Github for Windows</h4>
+                <a href="https://windows.github.com">https://windows.github.com</a>
+
+                <h4>Github for Mac</h4>
+                <a href="https://mac.github.com">https://mac.github.com</a>
+                <br>
+                <br>
+                For Linux and Solaris platforms, the latest release is available on
+                <br>
+                the official Git web site.
+
+                <h4>Github for All Platforms</h4>
+                <a href="https://git-scm.com">https://git-scm.com</a>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>SETUP</h3>
+                Configuring user information used across all local repositories
+
+                <table style="width:100%">
+                    <tr>
+                        <td>
+                            <b><code>git config --global user.name "[firstname lastname]"</code></b>
+                            <br>
+                            set a name that is identifiable for credit when review version history
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <b><code>git config --global user.email "[valid-email]"</code></b>
+                            <br>
+                            set an email address that will be associated with each history marker
+                        </td>                
+                    </tr>
+                    <tr>
+                        <td>
+                            <b><code>git config --global color.ui auto</code></b>
+                            <br>
+                            set automatic command line coloring for Git for easy reviewing
+                        </td>                   
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <br>
+
+                <h3>SETUP & INIT</h3>
+                Configuring user information, initializing and cloning repositories
+
+                <table>
+                    <tr>
+                        <td>
+                        <code><b> git init</b></code>
+                        <br>            
+                            initialize an existing directory as a Git repository
+                        </td> 
+                    </tr>    
+                    
+                    <tr>
+                        <td>
+                            <code><b> git clone [url] </b></code>
+                            <br>
+                            retrieve an entire repository from a hosted location via URL
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+
+            <div class="rightSection">
+                <h3>STAGE & SNAPSHOT</h3>
+                Working with snapshots and the Git staging area 
+
+                <table>
+                    <tr>
+                        <td>
+                            <code><b>git status</b></code>
+                            <br>
+                            show modified files in working directory,staged for your next commit
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code><b>git add [file]</b></code>
+                            <br>
+                            add a file as it looks now to your next commit(stage)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code><b>git reset [file]</b></code>
+                            <br>
+                            unstage a file while retaining the changes in working directory
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code><b>git diff</b></code>
+                            <br>
+                            diff of what is changed but not staged
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code><b>git diff --staged</b></code>
+                            <br>
+                            diff of what is staged but not yet commited
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code><b>git commit -m "[descriptive message]"</b></code>
+                            <br>
+                            commit your staged content as a new commit snapshot
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>BRANCH & MERGE</h3>
+                Isolating work in branches, changing context, and integrating changes
+
+                <table>
+                    <tr>
+                        <td>
+                            <code><b>git branch</b></code>
+                            <br>
+                            list your branches a * will appear next to the currently active branch
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code><b>git branch [branch-name]</b></code>
+                            <br>
+                            create a new branch at the current commit
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code><b>git checkout</b></code>
+                            <br>
+                            switch to another branch and check it out into your working directory
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code><b>git merge [branch]</b></code>
+                            <br>
+                            merge the specified branch's history into the current one
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code><b>git log</b></code>
+                            <br>
+                            show all commits in the current branch's history
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            &copy; 2019
+        </footer>
+    </div>
+</body>
+</html>
